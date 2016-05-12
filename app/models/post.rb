@@ -1,4 +1,5 @@
 class Post
   include Mongoid::Document
-  # Remember to create a migration!
+
+  field :content, type: String
 end
