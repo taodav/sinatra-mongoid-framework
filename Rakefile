@@ -25,7 +25,7 @@ namespace :generate do
       f.write(<<-EOF.strip_heredoc)
         class #{model_name}
           include Mongoid::Document
-          # Remember to create a migration!
+          include Mongoid::Timestamps
         end
       EOF
     end
