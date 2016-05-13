@@ -1,4 +1,6 @@
 class Post
   include Mongoid::Document
-  # Remember to create a migration!
+  belongs_to :user
+
+  field :content, type: String
 end
